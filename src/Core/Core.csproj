@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LanguageVersion>14</LanguageVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Core</RootNamespace>
+  </PropertyGroup>
+
+</Project>
