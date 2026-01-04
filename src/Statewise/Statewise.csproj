@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <LanguageVersion>14</LanguageVersion>
+    <LangVersion>14</LangVersion>
     <RootNamespace>Statewise</RootNamespace>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -10,7 +10,7 @@
   <PropertyGroup>
     <PackageId>Statewise</PackageId>
     <Title>Statewise</Title>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Ali Hakan Kurt</Authors>
     <Description>
       A flexible, type-safe, efficient and easy-to-use finite state machine library.
@@ -24,6 +24,7 @@
     </PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -74,6 +74,9 @@ public readonly ref struct FiniteStateMachineBuilder<TKey>
     /// <param name="state">The state instance.</param>
     /// <returns>The instance of <see cref="FiniteStateMachineBuilder{TKey}"/>.</returns>
     /// <exception cref="ArgumentNullException"/>
+    /// <exception cref="InvalidOperationException">
+    /// Thrown when trying to add a new state that has the same key as one of the previous states.
+    /// </exception>
     public readonly FiniteStateMachineBuilder<TKey> WithState(State<TKey> state)
     {
         ArgumentNullException.ThrowIfNull(state);
@@ -89,7 +92,9 @@ public readonly ref struct FiniteStateMachineBuilder<TKey>
     /// Builds a finite state machine with registered states.
     /// </summary>
     /// <returns>A new instance of <see cref="IFiniteStateMachine{TKey}"/>.</returns>
-    /// <exception cref="InvalidOperationException"/>
+    /// <exception cref="InvalidOperationException">
+    /// Thrown when trying to build more than once finite state machine.
+    /// </exception>
     public readonly IFiniteStateMachine<TKey> Build()
     {
         if (_states.Count == 0)
