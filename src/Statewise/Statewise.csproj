@@ -7,4 +7,28 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>Statewise</PackageId>
+    <Title>Statewise</Title>
+    <Version>1.0.0</Version>
+    <Authors>Ali Hakan Kurt</Authors>
+    <Description>
+      A flexible, type-safe, efficient and easy-to-use finite state machine library.
+    </Description>
+    <Copyright>Copyright (c) Ali Hakan Kurt</Copyright>
+    <PackageProjectUrl>https://github.com/alihakankurt/Statewise</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/alihakankurt/Statewise</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>
+      fsm finite state machine utility flexible type-safe efficient easy-to-use
+    </PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Pack="true" Visible="false" PackagePath="." />
+    <None Include="..\..\README.md" Pack="true" Visible="false" PackagePath="." />
+  </ItemGroup>
+
 </Project>
