@@ -1,0 +1,25 @@
+name: Publish NuGet Package
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: "10.0.x"
+      - name: Restore dependencies
+        run: dotnet restore src/Statewise/
+      - name: Build
+        run: dotnet build src/Statewise/ --configuration Release --no-restore
+      - name: Pack
+        run: dotnet pack src/Statewise/ --configuration Release --no-build --output ./nupkg
+      - name: Push
+        run: dotnet nuget push ./nupkg/Statewise.*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
