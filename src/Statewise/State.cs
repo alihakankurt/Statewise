@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace Core;
+namespace Statewise;
 
 /// <summary>
 /// Represents an abstract lifecycle behavior within a finite state machine.

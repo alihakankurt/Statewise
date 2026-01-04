@@ -2,7 +2,7 @@ using System;
 using System.Collections.Frozen;
 using System.Runtime.CompilerServices;
 
-namespace Core;
+namespace Statewise;
 
 internal class FiniteStateMachine<TKey> : IFiniteStateMachine<TKey>
     where TKey : notnull

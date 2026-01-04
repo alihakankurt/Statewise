@@ -1,4 +1,4 @@
-# Finite State Machine
+# Statewise
 
 A flexible, type-safe and efficient implementation of [finite state machine](https://en.wikipedia.org/wiki/Finite-state_machine) written using C# 14 (.NET 10). It is designed to be generic, extensible, and easy to construct with a fluent builder pattern, and generally aimed to use in games.
 

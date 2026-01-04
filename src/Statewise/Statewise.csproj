@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <LanguageVersion>14</LanguageVersion>
+    <RootNamespace>Statewise</RootNamespace>
     <Nullable>enable</Nullable>
-    <RootNamespace>Core</RootNamespace>
   </PropertyGroup>
 
 </Project>

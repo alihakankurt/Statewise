@@ -1,4 +1,4 @@
-namespace Core;
+namespace Statewise;
 
 /// <summary>
 /// Represents an abstract context that manages a finite set of states.

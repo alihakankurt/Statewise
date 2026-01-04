@@ -2,7 +2,7 @@ using System;
 using System.Collections.Frozen;
 using System.Collections.Generic;
 
-namespace Core;
+namespace Statewise;
 
 /// <summary>
 /// Fluent builder pattern for <see cref="IFiniteStateMachine{TKey}"/> implementation.

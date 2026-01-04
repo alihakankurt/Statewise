@@ -1,6 +1,6 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="src/Core/Core.csproj" />
+    <Project Path="src/Statewise/Statewise.csproj" />
     <Project Path="src/Examples/TrafficLight/Examples.TrafficLight.csproj" />
   </Folder>
 </Solution>
